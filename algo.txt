@@ -15,7 +15,7 @@ Début
     Tant que (c !='.') Faire
         //compter les caractéres
         <- nbcar + 1
-        // Compter les mots (chaque espace indique un nouveau mot)
+        // Compter les mots (chaque space indique un nouveau mot)
         Si (c !=' ') Alors
             nbmots <- nbmots + 1
             
