@@ -1,0 +1,35 @@
+Algorithme analyse de phrase
+
+Variable :
+c : caractere
+nbcar : entier 
+nbmots : entier
+nbvoy : entier
+
+Début
+    //initialisation des variables
+    nbcar= 1 
+    nbmots= 1
+    nbvoy= 1
+    Lire(c)
+    Tant que (c !='.') Faire
+        //compter les caractéres
+        <- nbcar + 1
+        // Compter les mots (chaque espace indique un nouveau mot)
+        Si (c !=' ') Alors
+            nbmots <- nbmots + 1
+            
+        Finsi
+        // compter les voyelles
+        Si (c =" a" ou c ="e" ou c = " i" ou c = " o" ou c = "u" ou c = "A"ou c = "E" ou c = "I" ou c = "O" ou c = " U") Alors
+        nbvoy <- nbvoy + 1  
+        Finsi
+        
+    FinFaire
+
+    // Restitution des résultat
+    ecrire(" la longueur est : ",nbcar)
+    ecrire( " la longueur est : ",nbmots)
+    ecrire( " la longueur est :",nbvoy)
+
+Fin
